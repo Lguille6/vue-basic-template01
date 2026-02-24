@@ -9,9 +9,9 @@ const routes = [
     component: HomePage,
   },
   {
-    path: '/other',
-    name: 'other',
-    component: () => import('@/pages/OtherPage.vue'),
+    path: '/info',
+    name: 'info',
+    component: () => import('@/pages/InfoPage.vue'),
   },
 ]
 
