@@ -23,7 +23,7 @@ const profile = ref({
           class="h-full w-full object-cover"
         />
       </div>
-      <h1 class="mb-2 font-display text-2xl font-bold text-white sm:text-3xl">
+      <h1 class="mb-2 font-display text-2xl font-bold text-pink-600 sm:text-3xl">
         {{ profile.name }}
       </h1>
       <p class="max-w-xs text-gray-300 sm:text-lg">{{ profile.slogan }}</p>
@@ -41,7 +41,8 @@ const profile = ref({
     <RouterLink
       to="/info"
       class="mt- hover-text-pink-400 text-pink-400 underline-offset-4 transition-colors duration-300 hover:underline"
-      >About me ➡️
+    >
+      About me ➡️
     </RouterLink>
   </main>
 </template>

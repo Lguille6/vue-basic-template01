@@ -3,17 +3,17 @@
     href="#"
     target="_blank"
     rel="noopener noreferrer"
-    class="flex w-full items-center gap-4 rounded-xl border border-pink-500 bg-pink-100 p-4 shadow-md shadow-pink-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-pink-700 hover:shadow-xl hover:shadow-pink-500/20"
+    class="group relative flex w-full items-center gap-4 rounded-xl border border-pink-500 bg-gray-900 p-4 shadow-md shadow-pink-900/50 transition-all duration-300 hover:scale-[1.02] hover:border-pink-700 hover:shadow-xl hover:shadow-pink-500/20"
   >
     <!-- Icon Container-->
     <div
-      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pink-200 text-pink-400"
+      class="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-pink-200 text-pink-400 transition-all duration-300 group-hover:scale-110 group-hover:bg-pink-500 group-hover:text-white group-hover:shadow-xl group-hover:shadow-pink-500/20"
     >
       <svg
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        class="h-6 w-6"
+        class="h-6 w-6 transition-transform duration-300 group-hover:rotate-6"
       >
         <path
           stroke-linecap="round"
@@ -32,5 +32,10 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
     </div>
+
+    <!-- Hover Glow Effect -->
+    <div
+      class="transition-opacity-100 absolute inset-0 rounded-xl bg-linear-to-r from-pink-500/0 via-pink-500/10 to-pink-500/0 opacity-0"
+    ></div>
   </a>
 </template>
